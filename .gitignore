@@ -2,3 +2,4 @@ __pycache__/*
 .idea/*
 .flaskenv
 app/__pycache__/*
+logs/*
