@@ -4,4 +4,3 @@
 app/__pycache__/*
 logs/*
 *.pyc
-messages.pot

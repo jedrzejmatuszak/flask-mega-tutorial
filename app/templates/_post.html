@@ -1,3 +1,4 @@
+
     <table class="table table-hover">
         <tr>
             <td width="70px">
@@ -6,13 +7,10 @@
                 </a>
             </td>
             <td>
-                {% set user_link %}
-                    <a href="{{ url_for('user', username=post.author.username) }}">
-                        {{ post.author.username }}
-                    </a>
-                {% endset %}
-                {{ _('%(username)s said %(when)s',
-                    username=user_link, when=moment(post.timestamp).fromNow()) }}
+                <a href="{{ url_for('user', username=post.author.username) }}">
+                    {{ post.author.username }}
+                </a>
+                said {{ moment(post.timestamp).fromNow() }}
                 <br>
                 {{ post.body }}
             </td>
