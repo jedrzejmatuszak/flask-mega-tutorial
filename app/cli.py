@@ -8,6 +8,7 @@ def translate():
     """Translation and localization commands."""
     pass
 
+
 @translate.command()
 def update():
     """Update all languages."""

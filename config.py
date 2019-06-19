@@ -1,4 +1,4 @@
-import os
+import os, secure
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -15,3 +15,5 @@ class Config:
     ADMINS = ['bladybladowicz@gmail.com']
     POSTS_PER_PAGE = 25
     LANGUAGES = ['en', 'es', 'pl']
+    # MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    MS_TRANSLATOR_KEY = secure.MS_TRANSLATOR_KEY
